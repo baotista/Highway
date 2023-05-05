@@ -4,7 +4,10 @@ import React from 'react'
 const Document = () => {
     return (
         <Html lang="en" data-theme="emerald">
-            <Head />
+            <Head>
+                <title>Highway</title>
+                <meta property="og:title" content="Highway" key="title" />
+            </Head>
             <body>
                 <Main />
                 <NextScript />
