@@ -63,8 +63,9 @@ const NewTopic = ({ onCreateSuccess }: newTopicProps) => {
                     <div className='text-red-700 mt-2'>{errors?.description?.message}</div>
                 </div>
             </div>
-            <div className={`w-full flex justify-end ${errors?.title || errors?.description ? 'mt-0' : 'mt-5'}`}>
-                <input className="btn btn-primary" type='submit' value="Add" />
+            <div className={`w-full flex justify-end  gap-4 ${errors?.title || errors?.description ? 'mt-0' : 'mt-5'}`}>
+                <input className="btn btn-primary btn-sm" type='submit' value="Add" />
+                <input className="btn btn-outline btn-sm" type='reset' value="Reset" />
             </div>
         </form>
     )
