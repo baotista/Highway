@@ -75,7 +75,7 @@ model Person {
 model Topic {
     id          String   @id @default(cuid())
     title       String
-    description String   @db.Text
+    description String?  @db.Text
     startDate   DateTime @default(now())
     endDate     DateTime @default(now())
     persons     Person[]
