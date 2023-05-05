@@ -5,7 +5,6 @@ const Document = () => {
     return (
         <Html lang="en" data-theme="emerald">
             <Head>
-                <title>Highway</title>
                 <meta property="og:title" content="Highway" key="title" />
             </Head>
             <body>

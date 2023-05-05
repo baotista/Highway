@@ -1,5 +1,4 @@
 import { useSession } from 'next-auth/react';
-import React from 'react'
 import NewTopic from 'src/components /components/topic/NewTopic';
 import TopicList from 'src/components /components/topic/TopicList';
 import { api } from 'src/components /utils/api';
@@ -13,12 +12,17 @@ const Topics = () => {
         }
     );
 
+    const handleCreationSuccsess = () => {
+        void refetchTopics();
+    }
+
     return (
         <>
+
             <h1 className='text-3xl'>Topics</h1>
 
             {topics && <TopicList topics={topics} />}
-            <NewTopic onCreateSuccess={refetchTopics} />
+            <NewTopic onCreateSuccess={handleCreationSuccsess} />
         </>
     )
 }
