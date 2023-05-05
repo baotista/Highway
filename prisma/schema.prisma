@@ -64,3 +64,19 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model Person {
+    id        String  @id @default(cuid())
+    firstName String
+    lastName  String
+    topics    Topic[]
+}
+
+model Topic {
+    id          String   @id @default(cuid())
+    title       String
+    description String   @db.Text
+    startDate   DateTime @default(now())
+    endDate     DateTime @default(now())
+    persons     Person[]
+}
