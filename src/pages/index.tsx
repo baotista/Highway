@@ -15,9 +15,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Your roadmapping tool" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Header />
-      </main>
+      Hello!
     </>
   );
 };

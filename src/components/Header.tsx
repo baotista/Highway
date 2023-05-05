@@ -15,6 +15,7 @@ const Header = () => {
                             tabIndex={0}
                             className="btn-ghost btn-circle avatar btn"
                             onClick={() => void signOut()}
+                            title='Sign out'
                         >
                             <div className="w-10 rounded-full">
                                 <img

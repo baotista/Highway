@@ -3,7 +3,7 @@ import React from 'react'
 
 const Document = () => {
     return (
-        <Html lang="en" data-theme="halloween">
+        <Html lang="en" data-theme="emerald">
             <Head />
             <body>
                 <Main />
